@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <title>Tarea menu scrip</title>
+</head>
+<body>
+  <header>
+    <div class="ancho container-header">
+      <div class="headermovil">
+        <figure>
+          <img class="logo" src="imagenes/logo_arriba.png" alt="">
+        </figure>
+        <div>
+          <i id="iconomenu" class="fas fa-bars fa-1x"></i>
+        </div>
+      </div>
+
+      <nav>
+        <ul id="id-menu" class="menu">
+          <li><a href='#'>Inicio</a></li>
+          <li><a href='#'>Servicios</a></li>
+          <li><a href='#'>Nuestros Productos</a></li>
+          <li><a href='#'>Contacto</a></li>
+        <ul>
+      </nav>
+    </div>
+  </header>
+  <section class="bg-foto">
+    <div class="info-slide">
+      <h1>Cultivamos verduras orgánicas y las traemos a tu mesa</h1>
+    </div>
+  </section>
+  <section class="servicios">
+    <div class="titulos">
+      <h2>Nuestros Servicios</h2>
+      <h3>Lo que ofrecemos</h3>
+    </div>
+    <div class="ancho article1">
+      <article>
+        <figure>
+          <img src="imagenes/icono1.png" alt="">
+        </figure>
+        <h3>Ganado Vacuno</h3>
+        <br>
+        <p>Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora</p>
+      </article>
+
+      <article>
+        <figure>
+          <img src="imagenes/icono2.png" alt="">
+        </figure>
+        <h3>Productos Lácteos</h3>
+        <br>
+        <p>Los productos lácteos como leche, el queso y el yogur contienen los nutrientes que su cuerpo necesita</p>
+      </article>
+
+      <article>
+        <figure>
+          <img src="imagenes/icono3.png" alt="">
+        </figure>
+        <h3>Frutas de la Huerta</h3>
+        <br>
+        <p>Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas de huerta</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <figure>
+      <img src="imagenes/logo_abajo.png" alt="">
+    </figure>
+  </footer>
+
+  <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+  <script>
+    $("#iconomenu").click(function () {
+      $("#id-menu").slideToggle();
+    });
+  </script>
+</body>
+</html>
